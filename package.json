@@ -1,0 +1,31 @@
+{
+  "name": "kysely-relations",
+  "version": "0.0.1",
+  "description": "Kysely relations builder similar to drizzle's relation API",
+  "license": "MIT",
+  "author": "alexander-azizi-martin",
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test test/**/*.test.ts"
+  },
+  "exports": {
+    ".": {
+      "types": "./relations-builder.d.ts",
+      "import": "./relations-builder.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "kysely": ">=0.27.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "@types/node": "^25.0.3",
+    "kysely": "^0.27.0",
+    "kysely-pglite-dialect": "^1.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
