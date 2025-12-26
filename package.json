@@ -1,6 +1,6 @@
 {
   "name": "kysely-relations",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Kysely relations builder similar to drizzle's relation API",
   "license": "MIT",
   "author": "alexander-azizi-martin",
@@ -18,16 +18,24 @@
     "test": "tsx --test test/**/*.test.ts"
   },
   "exports": {
-    ".": {
-      "types": "./src/relations-builder.d.ts",
-      "import": "./src/relations-builder.js"
+    "./postgres": {
+      "types": "./src/postgres/relations-builder.d.ts",
+      "import": "./src/postgres/relations-builder.js"
+    },
+    "./mysql": {
+      "types": "./src/mysql/relations-builder.d.ts",
+      "import": "./src/mysql/relations-builder.js"
+    },
+    "./sqlite": {
+      "types": "./src/sqlite/relations-builder.d.ts",
+      "import": "./src/sqlite/relations-builder.js"
     }
   },
   "files": [
     "src"
   ],
-  "main": "./src/relations-builder.js",
-  "types": "./src/relations-builder.d.ts",
+  "main": "./src/postgres/relations-builder.js",
+  "types": "./src/postgres/relations-builder.d.ts",
   "peerDependencies": {
     "kysely": ">=0.27.0"
   },

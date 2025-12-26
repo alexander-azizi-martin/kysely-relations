@@ -8,9 +8,26 @@ This library provides an API similar to drizzle's relations so that kysely can b
 npm install kysely-relations
 ```
 
+## Import
+
+**Important:** Import the correct implementation for your database:
+
+```typescript
+// For PostgreSQL
+import { createRelationsBuilder } from "kysely-relations/postgres";
+
+// For MySQL
+import { createRelationsBuilder } from "kysely-relations/mysql";
+
+// For SQLite
+import { createRelationsBuilder } from "kysely-relations/sqlite";
+```
+
 ## Usage
 
 ```typescript
+import { createRelationsBuilder } from "kysely-relations/postgres";
+
 interface Database {
   users: { id: number; name: string };
   posts: { id: number; user_id: number; title: string };

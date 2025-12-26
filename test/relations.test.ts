@@ -3,7 +3,7 @@ import assert from "node:assert";
 import { PGlite } from "@electric-sql/pglite";
 import { ColumnType, Kysely } from "kysely";
 import { PGliteDialect } from "kysely-pglite-dialect";
-import { createRelationsBuilder } from "../src/relations-builder.js";
+import { createRelationsBuilder } from "../src/postgres/relations-builder.js";
 
 // Database schema type
 interface Database {
