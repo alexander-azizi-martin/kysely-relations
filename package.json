@@ -5,6 +5,10 @@
   "license": "MIT",
   "author": "alexander-azizi-martin",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexander-azizi-martin/kysely-relations"
+  },
   "scripts": {
     "test": "tsx --test test/**/*.test.ts"
   },
