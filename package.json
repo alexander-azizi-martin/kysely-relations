@@ -1,6 +1,6 @@
 {
   "name": "kysely-relations",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Kysely relations builder similar to drizzle's relation API",
   "license": "MIT",
   "author": "alexander-azizi-martin",
@@ -19,13 +19,15 @@
   },
   "exports": {
     ".": {
-      "types": "./relations-builder.d.ts",
-      "import": "./relations-builder.js"
+      "types": "./src/relations-builder.d.ts",
+      "import": "./src/relations-builder.js"
     }
   },
   "files": [
     "src"
   ],
+  "main": "./src/relations-builder.js",
+  "types": "./src/relations-builder.d.ts",
   "peerDependencies": {
     "kysely": ">=0.27.0"
   },
