@@ -1,6 +1,6 @@
 {
   "name": "kysely-relations",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Kysely relations builder similar to drizzle's relation API",
   "license": "MIT",
   "author": "alexander-azizi-martin",
