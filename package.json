@@ -1,6 +1,6 @@
 {
   "name": "kysely-relations",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Kysely relations builder similar to drizzle's relation API",
   "license": "MIT",
   "author": "alexander-azizi-martin",
@@ -9,6 +9,11 @@
     "type": "git",
     "url": "https://github.com/alexander-azizi-martin/kysely-relations"
   },
+  "keywords": [
+    "kysely",
+    "relations",
+    "orm"
+  ],
   "scripts": {
     "test": "tsx --test test/**/*.test.ts"
   },
